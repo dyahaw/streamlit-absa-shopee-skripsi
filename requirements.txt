@@ -1,1 +1,2 @@
 streamlit
+nlp_id.lemmatizer
