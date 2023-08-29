@@ -1,2 +1,2 @@
 streamlit
-nlp_id.lemmatizer
+pip install nlp-id
