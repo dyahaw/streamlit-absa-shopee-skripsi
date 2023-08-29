@@ -311,6 +311,15 @@ st.markdown("<hr></hr>", unsafe_allow_html=True)
 
 ####### Prediksi #######
 st.markdown("#### Prediksi Kelas Aspek dan Sentimen Ulasan File (CSV)")
+st.write("""
+        - Ketentuan Format untuk Diupload:
+            - File (.csv) hanya memiliki 1 kolom yaitu kolom _review_
+            - Kolom harus memiliki nama _review_
+            - Format file harus dalam (.csv)
+        - Contoh Format File untuk Diupload yaitu:
+    """)
+contoh_dataset = pd.read_csv("datasampelPrediksi.csv")
+st.dataframe(contoh_dataset)
 data_file_csv = st.file_uploader("Upload File CSV", type=['csv'])
 if data_file_csv is not None:
     file_detail = {"Filename": data_file_csv.name,
